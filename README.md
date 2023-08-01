@@ -1,1 +1,2 @@
-# to-do-list
+npm install
+add DB_STRING to .env file
