@@ -13,7 +13,10 @@ app.use(express.static('public'))
 app.use(express.urlencoded({ extended: true }))
 app.use(express.json())
 
+// default page
 app.use('/', homeRoutes)
+
+// when in the todo url go to todoRoutes
 app.use('/todos', todoRoutes)
  
 app.listen(process.env.PORT, ()=>{
