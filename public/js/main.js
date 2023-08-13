@@ -14,6 +14,7 @@ Array.from(itemCompleted).forEach((element)=>{
     element.addEventListener('click', markUnComplete)
 })
 
+// delete item
 async function deleteItem(){
     const itemText = this.parentNode.childNodes[1].innerText
     try{
